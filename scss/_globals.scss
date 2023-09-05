@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+//hover efefct 
+a:hover {
+    color: $light-pink;
+    transition: 150ms ease-in-out;
+}
+
+h1 {
+    font-size: 1.225rem;
+}
+
+h1,
+h2{
+    color: $very-dark-cyan;
+    font-family: $font-family-headings;
+    line-height: 1.6;
+}
+p {
+    color: $very-dark-cyan;
+    font-size: 0.7525rem;
+    line-height: 1.5;
+}
+button:hover {
+    opacity:0.55;
+}
+.button {
+    margin-top: 2.687rem;
+    margin-bottom: 5rem;
+    font-size: 0.76875rem;
+    border: transparent;
+    background-color: $pink;
+    font-family: $fontfamily-body;
+    color: $white;
+    font-weight: 700; 
+    box-shadow: 0 8px 8px -4px lightblue;
+    cursor: pointer;
+}

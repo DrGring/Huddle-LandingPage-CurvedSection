@@ -1,0 +1,122 @@
+.article {
+    background-color: $very-pale-blue;
+
+    @include breakpoint-up(medium) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items:center;
+    }
+
+    &__bg-top-mob {
+        @include bg-width-mob1;
+        margin-bottom: -0.25rem;
+
+        @include breakpoint-up(medium) {
+            display: none;
+        }
+    }
+    &__desktop-top {
+        display: none;
+
+        @include breakpoint-up(medium) {
+            display: initial;
+            margin-bottom: -0.25rem;
+            width: 100%;
+        }
+    }
+
+    &__bg-bottom-mob {
+        @include bg-width-mob1;
+        margin-top: -0.8rem;
+        margin-bottom: 6.3125rem;
+
+        @include breakpoint-up(medium) {
+            display: none;
+        }
+    }
+    &__desktop-bottom {
+        display: none;
+
+        @include breakpoint-up(medium) {
+            display: initial;
+            margin-top: -0.8rem;
+            width: 100%;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        padding: 0 2rem 0 2rem;
+        margin-bottom: 4.18rem;
+        margin-top: 3.25rem;
+    }
+
+    &__description,
+    &__description--flex {
+        width: 100%;
+        color: $very-dark-cyan;
+        font-family: $fontfamily-body;
+        text-align: center;
+        padding: 0 1.6875rem  3.125rem 1.6875rem;
+
+        &>h3 {
+            font-size: 1.18rem;
+        }
+
+        &>p {
+            color: $very-dark-cyan;
+            
+            line-height: 1.6;
+        }
+    }
+    &__description--flex,
+    &__description {
+        @include breakpoint-up(medium) {
+            text-align: left;
+            height: max-content;
+            margin-top: 4.125rem;
+        }           
+    } 
+
+    &__no-bg {
+        background-color: white;
+        width: 100%;
+        margin-bottom: 6.3125rem;
+
+        @include breakpoint-up(medium) {
+            width: 100%;
+            display: flex;
+        }
+
+        &-img {
+            width: inherit;
+            padding: 0 2rem 0 2rem;
+            margin-bottom: 4.18rem;
+        }
+    }
+    &__footer {
+        text-align: center;
+        width: 100%;
+
+        &__title {
+            line-height: 2rem;
+            
+        }
+
+        &__button {
+            width:  11.0625rem;
+            height: 2.1875rem;
+            border-radius: 3.125rem;
+            border: solid transparent;
+            font-family: $fontfamily-body;
+            font-size: 0.76875rem;
+            font-weight: 700;
+            background-color: $pink;
+            box-shadow: 0 8px 8px -4px lightblue;
+            cursor: pointer;
+            &>a {
+                color: white;
+            }
+        }
+    }
+}

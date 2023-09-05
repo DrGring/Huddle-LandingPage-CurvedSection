@@ -1,0 +1,55 @@
+.hero {
+    margin: 2.0625rem;
+    text-align: center;
+    font-family: $fontfamily-body;
+
+    a {
+        display: grid;
+        align-content: center;
+        width: 100%;
+        height: 100%;
+        color: $white;
+    }
+    a.button:hover {
+        opacity: 0.1;
+    }
+
+    @include breakpoint-up(large) {
+        margin: 0 13.2rem 0 13.2rem;
+    }
+
+
+    &__title { 
+
+        @include breakpoint-up(medium) {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__text {
+        margin-bottom: 0;
+
+        @include breakpoint-up(medium) {
+            font-size: 1.06rem;
+            margin: 0 5.375rem 0 5.375rem;
+        }
+
+        @include breakpoint-up(large) {
+            margin-left: 12.7rem;
+            margin-right: 12.7rem;
+        }
+    }
+
+    &__button {
+        width:  11.0625rem;
+        height: 2.1875rem;
+        border-radius: 3.125rem;
+    }
+
+    &__image {
+
+        img {
+            width: 100%;
+        }
+    }
+}

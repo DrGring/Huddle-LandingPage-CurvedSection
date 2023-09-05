@@ -1,0 +1,43 @@
+.feature {
+    display: grid;
+    font-family: $fontfamily-body;
+    margin: 4.5rem 6.06rem 0 6.06rem;
+    gap: 5.375rem;
+
+    @include breakpoint-up(medium) {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    h1{
+        font-family: $fontfamily-body;
+
+    }
+    p {
+        margin: 0;
+        color: gray;
+        font-weight: 600;
+    }
+
+    &__items {
+        height: 7.44rem;
+    }
+
+    &__image {
+        height: 1.5rem;
+    }
+
+    &__number {
+        font-size:2.62rem;
+        margin: 0;
+    }
+
+    &__text {
+
+        &.text__grid {
+            margin: 0 2.25rem 0 0;
+        }
+    }
+}
