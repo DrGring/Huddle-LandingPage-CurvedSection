@@ -4,40 +4,55 @@
     margin: 4.5rem 6.06rem 0 6.06rem;
     gap: 5.375rem;
 
-    @include breakpoint-up(medium) {
-        width: 100%;
-        margin: 0;
+    @include breakpoint-up(large) {
+        height: 13.4375rem;
+        margin: 7.8125rem 17.6875rem;
         display: flex;
-        justify-content: space-around;
-    }
-
-    h1{
-        font-family: $fontfamily-body;
-
-    }
-    p {
-        margin: 0;
-        color: gray;
-        font-weight: 600;
+        justify-content: space-between;
     }
 
     &__items {
         height: 7.44rem;
+        
+        @include breakpoint-up(medium) {
+            height: 100%;
+        }
     }
 
     &__image {
         height: 1.5rem;
+
+        @include breakpoint-up(medium) {
+            height: 2.5rem;
+        }        
     }
 
     &__number {
+        font-family: $fontfamily-body;
+        height: auto;
         font-size:2.62rem;
         margin: 0;
+
+        @include breakpoint-up(medium) {
+            font-size: 4.6875rem;
+        }
     }
 
     &__text {
+        margin: 0;
+        color: gray;
+        font-weight: 600;
 
+        @include breakpoint-up(medium) {
+           font-size: 1.1rem
+        }
+    
         &.text__grid {
             margin: 0 2.25rem 0 0;
+
+            @include breakpoint-up(large) {
+                text-align: center;
+            }
         }
     }
 }

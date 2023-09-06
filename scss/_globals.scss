@@ -8,10 +8,6 @@ html {
 body {
     margin: 0;
     color:$white;
-
-    p {
-        font-weight: 600;
-    }
 }
 
 *,
@@ -44,8 +40,12 @@ p {
     font-size: 0.7525rem;
     line-height: 1.5;
 }
+button {
+    transition: 150ms ease-in-out;
+}
 button:hover {
-    opacity:0.55;
+    background-color: $light-pink;
+    transform: scaleX(1.05);
 }
 .button {
     margin-top: 2.687rem;
