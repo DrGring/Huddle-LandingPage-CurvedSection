@@ -3,6 +3,10 @@
     text-align: center;
     font-family: $fontfamily-body;
 
+    @include breakpoint-up(large) {
+        margin: 0 13.2rem 0 13.2rem;
+    }
+
     a {
         display: grid;
         align-content: center;
@@ -13,11 +17,6 @@
     a.button:hover {
         opacity: 0.1;
     }
-
-    @include breakpoint-up(large) {
-        margin: 0 13.2rem 0 13.2rem;
-    }
-
 
     &__title { 
 
@@ -44,6 +43,12 @@
         width:  11.0625rem;
         height: 2.1875rem;
         border-radius: 3.125rem;
+
+        @include breakpoint-up(large) {
+            width: 25.0625rem;
+            height: 4.9375rem;
+            font-size:1.0625rem;
+        }
     }
 
     &__image {

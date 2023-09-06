@@ -71,10 +71,18 @@
     }
     &__description--flex,
     &__description {
+
         @include breakpoint-up(medium) {
             text-align: left;
             height: max-content;
             margin-top: 4.125rem;
+
+            >h3 {
+                font-size: 2.5rem;
+            }
+            >p {
+                font-size: 0,0703rem;
+            }
         }           
     } 
 
@@ -97,9 +105,15 @@
     &__footer {
         text-align: center;
         width: 100%;
+        margin-bottom: 13.6875rem;
 
         &__title {
             line-height: 2rem;
+            margin: 0 3.75rem 2.1875rem;
+
+            @include breakpoint-up(medium) {
+                font-size: 2.5rem;
+            }
             
         }
 
@@ -113,6 +127,12 @@
             font-weight: 700;
             background-color: $pink;
             box-shadow: 0 8px 8px -4px lightblue;
+
+            @include breakpoint-up(large) {
+                width: 25.0625rem;
+                height: 4.9375rem;
+                font-size:1.0625rem;
+            }
             cursor: pointer;
             &>a {
                 color: white;
